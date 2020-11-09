@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithin Scripting languages assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:#9DF3C4; width: 80vw; margin: auto;">
+    <div class="content">
+        <h1 class="heading">Scripting languages assignment</h1>
+        <div class="nameRollNO">
+            <h3>Name: Nithin</h3>
+            <h3>Enroll No: 17STUCHH010048</h3>
+        </div>
+        <h1 class="mainHeading" id="firstline">1 Introduction to HTML5 and Web Design</h1>
+        <h2 class="subHeading">1.1 Introduction to HTML5</h2>
+        <h3 class="subSubHeading">1.1.1 Introduction :</h3>
+        <div class="subSubContent">
+            <p>HTML stands for Hyper Text Markup Language. 
+                It is used to design web pages using markup language. HTML is the combination of 
+                Hypertext and Markup language. Hypertext defines the link between the web pages. 
+                Markup language is used to define the text document within tag which defines the 
+                structure of web pages. HTML 5 is the fifth and current version of HTML. It has 
+                improved the markup available for documents and has introduced application programming 
+                interfaces(API) and Document Object Model(DOM).
+            </p>
+        </div>
+        <h3 class="subSubHeading">1.1.2 Features:</h3>
+        <div class="subSubContent">
+            <ul>
+                <li>There are new graphics elements including vector graphics and tags.</li>
+                <li>Drag and Drop- The user can grab an object and drag it further dropping it on a new location.</li>
+                <li>Geo-location services- It helps to locate the geographical location of a client.</li>
+                <li>Uses SQL database to store data offline.</li>
+                <li>Allows to draw various shapes like triangle, rectangle, circle, etc.</li>
+                <li>Capable of handling incorrect syntax.</li>
+            </ul>
+        </div>
+        <h2 class="subHeading">1.2 Web Design:</h2>
+        <div class="subContent">
+            <p>Web design is the process of planning, conceptualizing, and arranging content 
+                intended for the Internet. Modern web design goes beyond how things 
+                look (aesthetics) to include how things work (functionality). 
+                Web design is not limited to websites as it includes other uses such 
+                as web apps, mobile apps, and user interface design.
+            </p>
+        </div>
+        <h3 class="subSubHeading">1.2.1 Web design elements:</h3>
+        <div class="subSubContent">
+            <p>When designing a website, it’s imperative to consider both the look and the functionality 
+                of the site.Integrating these elements into the design will help maximize the performance 
+                of the site, regardless of how performance is measured.
+            </p>
+        </div>
+        <h3 class="subSubHeading">1.2.2 Types of website design:</h3>
+        <div class="subSubContent">
+
+        <p>
+            There are two ways to properly design a website: adaptive and responsive websites.
+        </p>
+        <h4>Adaptive websites</h4>
+        <p>
+            Adaptive web design uses two or more versions of a website that are customized for 
+            different screen sizes. Adaptive websites can be split in two main categories based 
+            upon how the site detects what “version” needs to be displayed.
+            <br><br>
+            When your browser (aka client) connects to a website, the HTTP request will include 
+            a field called “user-agent” that informs the server about the type of device attempting to 
+            view the page.
+            <br><br>
+            Basically, this means the site knows what version to display (ex: desktop or mobile). The 
+            only problem with this approach is that if you shrink the browser window on a desktop, the 
+            page will not adapt because it continues to show the full “desktop version”.
+            <br><br>
+            Instead of using the “user-agent”, the website uses media-queries and breakpoints to switch 
+            between versions. So instead of having a desktop, tablet, and mobile versions, you’d have 1080px, 
+            768px, and 480px width versions. On top of offering more flexibility when designing, this approach 
+            offers a more “responsive” look when changing the size of your browser on a large screen.
+        </p>
+        <h4>Responsive websites</h4>
+        <p>Responsive websites use a combination of flexible grids (based on percentages) with breakpoints 
+            (using media queries) to create a custom look at every screen size. Unlike adaptive sites that 
+            adapt only when they hit a breakpoint, responsive websites are constantly changing according to 
+            the screen size.
+        </p>
+        </div>
+        <h1 class="mainHeading">2 HTML tags :</h1>
+        <div class="mainHeadingContent">
+            <p>HTML tags are like keywords which defines that how web browser will format and display the content. 
+                With the help of tags, a web browser can distinguish between an HTML content and a simple content. 
+                HTML tags contain three main parts: opening tag, content and closing tag. But some HTML tags are 
+                unclosed tags.
+                <br><br>
+                When a web browser reads an HTML document, browser reads it from top to bottom and left to right. 
+                HTML tags are used to create HTML documents and render their properties. Each HTML tags have different 
+                properties.
+                <br><br>        
+                An HTML file must have some essential tags so that web browser can differentiate between a simple text 
+                and HTML text. You can use as many tags you want as per your code requirement.
+            </p>
+            <p>All HTML tags must enclosed within &lt; &gt; these brackets.</p>
+            <p>Every tag in HTML perform different tasks.</p>
+            <p>If you have used an open tag &lt;tag&gt;, then you must use a close tag &lt;/tag&gt; (except some tags)</p>
+        </div>
+
+        <h2 class="subHeading">2.1 Syntax</h2>
+        <div class="subContent">
+            <p>&lt;tag&gt; content &lt;/tag&gt;</p>
+        </div>
+        <h2 class="subHeading">2.2 Types of HTML tags</h2>
+        <h3 class="subSubHeading">2.2.1 Non singleton  HTML Tags</h3>
+        <div class="subSubContent">
+            <p>Most of the HTML tags have a closing tags these are said to be Non singleton tags</p>
+            <p>Ex: &lt;h1&gt; &lt;/h1&gt;, &lt;p&gt; &lt;/p&gt;, &lt;div&gt; &lt;/div&gt;</p>
+        </div>
+        <h3 class="subSubHeading">2.2.2 Singleton HTML tags</h3>
+        <div class="subSubContent">
+            <p>The void elements or singleton tags in HTML don't require a closing tag to be valid. These elements are usually 
+                ones that either stand alone on the page ​or where the end of their contents is obvious from the context of the 
+                page itself.
+            </p>
+            <p>Ex: &lt;input&gt;, &lt;link&gt;, &lt;img&gt;</p>
+        </div>
+        <div class="subContent">
+            <p>These are some of the tags:</p>
+            <h4>Heading Tag</h4>
+            <p>Any document starts with a heading. You can use different sizes for your headings. HTML also has 
+                six levels of headings, which use the elements &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; and 
+                &lt;h6&gt;. While displaying any heading, browser adds one line before and one line after that heading.
+            </p>
+            <p>Syntax: &lt;h1&gt; This is heading with h1 tag &lt;/h1&gt;</p>
+            <div class="block">
+                <h1>This is heading with h1 tag</h1>
+                <h2>This is heading with h2 tag</h2>
+                <h3>This is heading with h3 tag</h3>
+                <h4>This is heading with h4 tag</h4>
+                <h5>This is heading with h5 tag</h5>
+                <h6>This is heading with h6 tag</h6>
+            </div>
+
+            <h4>Paragraph Tag</h4>
+            <p>The &lt;p&gt; tag offers a way to structure your text into different paragraphs. Each paragraph of 
+                text should go in between an opening &lt;p&gt; and a closing &lt;/p&gt; tag as shown below in the 
+                example −
+            </p>
+            <p>Syntax: &lt;p&gt; This is a paragraph &lt;/p&gt;</p>
+            <div class="block">
+                <p>This is a paragraph</p>
+            </div>
+
+            <h4>Break Tag</h4>
+            <p>Whenever you use the &lt;br&gt; element, anything following it starts from the next line. This tag 
+                is an example of an empty element, where you do not need opening and closing tags, as there is 
+                nothing to go in between them.
+            </p>
+            <p>The &lt;br&gt; tag has a space between the characters br and the forward slash. If you omit this space, 
+                older browsers will have trouble rendering the line break, while if you miss the forward slash 
+                character and just use &lt;br&gt; it is not valid in XHTML.
+            </p>
+            <p>Syntax:  &lt;p&gt; This is a paragraph and we are &lt;br&gt; using break tag in this &lt;br&gt; 
+                paragraph &lt;/p&gt;
+            </p>
+            <div class="block">
+                <p>This is a paragraph and we are <br> using break tag in this <br> paragraph</p>
+            </div>
+
+            <h4>anchor Tag</h4>
+            <p>The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.</p>
+            <p>The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.</p>
+            <p>By default, links will appear as follows in all browsers:</p>
+            <ul>
+                <li>An unvisited link is underlined and blue</li>
+                <li>A visited link is underlined and purple</li>
+                <li>An active link is underlined and red</li>
+            </ul>
+            <p>Syntax: &lt;a href="https://www.ibsindia.org/" &gt; Click hear to visit ibsindia.org &lt;/a&gt; </p>
+            <div class="block">
+                <a href="https://www.ibsindia.org/">Click hear to visit ibsindia.org</a>
+            </div>
+
+            <h4>i tag</h4>
+            <p>HTML &lt; i &gt; tag is used to represent a part of text in a different voice from the surrounding text. The content within <i> tag usually renders in italic type on the browser. It can be useful to represent some technical terms, phrase, fictional character thoughts, etc.</p>        
+            <p>Syntax: &lt;p&gt;This is a paragraph and i want to &lt;i style="background-color: brown;" &gt; highlight this word &lt;/i&gt; &lt;/p&gt; </p>
+            <div class="block">
+                <p>This is a paragraph and i want to <i style="background-color: brown;">highlight this word</i></p>
+            </div>
+
+            <h4>canvas Tag</h4>
+            <p>The HTML canvas element provides HTML a bitmapped surface to work with. It is used to draw graphics on the web page.</p>
+            <p>The HTML 5 &lt;canvas&gt; tag is used to draw graphics using scripting language like JavaScript.</p>
+            <p>The &lt;canvas&gt; element is only a container for graphics, you must need a scripting language to draw the graphics. The &lt;canvas&gt; element allows for dynamic and scriptable rendering of 2D shapes and bitmap images.</p>
+            <p>Syntax: &lt;canvas id = "mycanvas" width ="200" height ="100"&gt; &lt;/canvas&gt;</p>
+            <canvas id="myCanvas1" width="200" height="100" style="border:2px solid;"></canvas>  
+            <canvas id="myCanvas" width="200" height="100" style="border:2px solid ;">
+                Your browser does not support the HTML canvas tag.</canvas>
+
+            <h4>strong tag</h4>
+            <p>HTML &lt;strong&gt; tag is a phrase tag which is used to represent the important text of a document on the browser. The text within &lt;strong&gt; text has semantic importance for the search engines and emphasize the text with special intonation.</p>
+            <p>The text within &lt;strong&gt; tag renders in bold font on the browser by default; however it can be changed using CSS. </p>
+            <p>Syntax: &lt;p&gt;The weather is not good today.  
+                &lt;strong&gt;It may heavy rain today, so it will better to be in your home.&lt;/strong&gt; &lt;p&gt;</p>
+            <div class="block">
+                <p>The weather is not good today.  
+                    <strong>It may heavy rain today, so it will better to be in your home.</strong>  
+                </p>
+            </div>
+
+            <h4>input tag</h4>
+            <p>The HTML &lt;input&gt; tag is used to represent a form input control in HTML document. This form input control facilitate user to input data and communicate with a website or application. Let's take an example of an HTML form with three input fields, two text fields and one button for submission.</p>
+            <p>Syntax: &lt;p&gt; &lt;input type="text" name="FirstName"  placeholder="enter firstname..."&gt; &lt;/p&gt;</p>
+            <div class="block">
+                <input type="text" name="FirstName"  placeholder="enter firstname...">
+            </div>
+
+            <h4>span tag</h4>
+            <p>HTML <span> tag is used as a generic container of inline elements. It is used for styling purpose to the grouped inline elements.</p>
+            <p>The &lt;span&gt; tag does not have any default meaning or rendering. </p>
+            <p>The &lt;span&gt; tag can be useful for the following task:</p>
+            <ul>
+                <li>To change the language of a part of the text.</li>
+                <li>To change the color, font, background of a part of text using CSS</li>
+                <li>To apply the scripts to the particular part of the text. </li>
+            </ul>
+            <p><b>Syntax:</b>  &lt;p&gt; I have choosen only   
+                &lt;span style="color: red;"&gt; red&lt;/span&gt; ,   
+                &lt;span style="color: blue;"&gt; blue&lt;/span&gt; , and  
+                &lt;span style="color: green;"&gt; green&lt;/span&gt;  colors for my painting.  
+            </p>  </p>
+            <div class="block">
+                <p>I have choosen only   
+                    <span style="color: red;">red</span>,   
+                    <span style="color: blue;">blue</span>, and  
+                    <span style="color: green;">green</span> colors for my painting.  
+                </p>  
+            </div>
+
+            <h4>strike tag</h4>
+            <p>HTML &lt;strike&gt; tag was used to strike a line through the text, contained within it. </p>
+            <p>Syntax: &lt;p&gt;This is a paragraph with &lt;strike&gt; strike tag &lt;/strike&gt; &lt;/p&gt;</p>
+            <div class="block">
+                <p>This is a paragraph with <strike>strike tag</strike></p>
+            </div>
+        </div>
+        <!-- .............................. -->
+        <h1 class="mainHeading">3 HTML Links</h1>
+        <div class="mainHeadingContent">
+            <p>Syntax:&lt;a href="https://www.icfaiuniversity.in/"&gt;click here to visit IcfaiWebsite&lt;/a&gt;</p>
+            <div class="block">
+                <p><a href="https://www.icfaiuniversity.in/">click here to visit IcfaiWebsite</a></p>
+            </div>
+        </div>
+        
+        <h2 class="subHeading">3.1 The target Attribute</h2>
+        <div class="subContent">
+            <p>The target attribute can have one of the following values:</p>
+            <p>_self - Default. Opens the document in the same window/tab as it was clicked</p>
+            <p>_blank - Opens the document in a new window or tab</p>
+            <p>_parent - Opens the document in the parent frame</p>
+            <p>_top - Opens the document in the full body of the window</p>
+            <p>Syntax:&lt;a href="https://www.icfaiuniversity.in/" target="_blank"&gt; click here to visit ibsindia.org &lt;/a&gt; </p>
+            <p>If target="_blank", the link will open in a new browser window or tab.</p>
+            <div class="block">
+                <a href="https://www.icfaiuniversity.in/" target="_blank" >click here to visit ibsindia.org </a>
+            </div>
+        </div>
+        <h2 class="subHeading">3.2 Absolute URLs vs. Relative URLs</h2>
+        <div class="subContent">
+        <p>Both examples above are using an absolute URL (a full web address) in the href attribute.</p>
+        <p> A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):</p>
+        </div>
+        <h3 class="subSubHeading">3.2.1 Absolute URLs</h3>
+        <div class="subSubContent">
+            <p><a href="https://www.facebook.com/">Facebook</a></p>
+            <p><a href="https://www.google.com/">Google</a></p>
+        </div>
+        <h3 class="subSubHeading">3.2.2 Relative URLs</h3>
+        <div class="subSubContent">
+            <p><a href="html_images.asp">HTML Images</a></p>
+            <p><a href="/css/default.asp">CSS Tutorial</a></p>
+        </div>
+        <h2 class="subHeading">3.3 Image as a Link</h2>
+        <div class="subContent">
+            <p>Syntax:&lt;a href="https://www.icfaiuniversity.in/" target="_blank" &gt;
+                &lt;img src="150408804525355IFHENew.jpg"  style="width:42px;height:42px;"&gt;
+                &lt;/a&gt;
+            </p>
+
+            <p>The image below is a link. Try to click on it.</p>
+            <a href="https://www.icfaiuniversity.in/" target="_blank" ><img src="150408804525355IFHENew.jpg"  style="width:60px;height:42px;"></a>
+        </div>
+        <h2 class="subHeading">3.4 Adding Images</h2>
+        <div class="subContent">
+            <p>Syntax: &lt;img src="150408804525355IFHENew.jpg" style="height: 17cm; width:20cm;"/&gt; </p>
+        </div>
+        <div style="height: 17cm; width:20cm; margin: auto;">
+        <img src="150408804525355IFHENew.jpg" style="height: 17cm; width:20cm;"/>
+          <figcaption style="font-family: Arial, Helvetica, sans-serif;"> <b>Figure1: </b>ICFAI University</figcaption>
+        </div>
+        <br><br>
+        <!-- <img src="ifhe-building.jpg" alt="Italian Trulli"> -->
+
+        <h1 class="mainHeading">4 Creating Tables and forms</h1>
+        <h2 class="subHeading">4.1 Html tables</h2>
+
+        <table style="width:80%"> 
+            <caption><b>Table 1</b></caption> 
+            <tr> 
+                <th>Name</th> 
+                <th>Mobile NO</th> 
+                <th>Age</th> 
+            </tr> 
+            <tr> 
+                <td>Nithin</td> 
+                <td>8977116440</td> 
+                <td>20</td> 
+            </tr> 
+            <tr> 
+                <td>Abhiles</td> 
+                <td>0630523057</td> 
+                <td>26</td> 
+            </tr> 
+            <tr> 
+                <td>Vishal</td> 
+                <td>0928699867</td> 
+                <td>41</td> 
+            </tr> 
+        </table> 
+        <h2 class="subHeading">4.2 Html forms</h2>
+        <div class="subContent">
+            <p>The  &lt;form&gt; tag is used to create an HTML form for user input.</p>
+            <p>The &lt;form&gt; element can contain one or more of the following form elements:</p>
+            <p>Syntax: &lt;form action="form-handler" &gt; Write your input fields hear...........&lt;/form&gt;</p>
+            <div class="block">
+                <form action="#">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <h1 class="mainHeading">5 Adding styles and classes to HTML web pages</h1>
+        <div class="mainHeadingContent">
+            <p>Styles can be added to HTML documents in 3 ways:</p>
+            <ul>
+                <li><strong>Inline</strong> - by using the style attribute inside HTML elements</li>
+                <li><strong>Internal</strong> - by using a &lt;style&gt; element in the <code class="w3-codespan">&lt;head&gt;</code> section</li>
+                <li><strong>External</strong> - by using a &lt;link&gt; 
+                element to link to an external CSS file</li>
+            </ul>
+        </div>
+        <h2 class="subHeading">5.1 Inline styles</h2>
+        <div class="subContent">
+            <p>An inline CSS is used to apply a unique style to a single HTML element.</p>
+            <p>An inline CSS uses the style attribute of an HTML element.</p>
+            <p>Syntax: &lt;h1 style="color:blue;"&gt;A Blue Heading&lt;h1&gt; </p>
+            <div class="block">
+                <h1 style="color:blue;">A Blue Heading</h1>
+            </div>
+            <p>Syntax: &lt;p style="color:red;"&gt;A red paragraph.&lt;p&gt; </p>
+            <div class="block">
+                <p style="color:red;">A red paragraph.</p>
+            </div>
+        </div>
+        <h2 class="subHeading">5.2 Internal  styles</h2>
+        <div class="subContent">
+            <p>An internal CSS is used to define a style for a single HTML page.</p>
+            <p>An internal CSS is defined in the &lt;head&gt; section of an HTML page, within a &lt;style&gt; element.</p>
+        </div>
+        <h2 class="subHeading">5.3 External styles using classes and id's</h2>
+        <div class="subContent">
+            <p>
+                An external style sheet is used to define the style for many HTML pages.
+            </p>
+            <p>
+                To use an external style sheet, add a link to it in the &lt;head&gt; section of each HTML page:
+            </p>
+            <p>Syntax: &lt;head&gt; 
+                &lt;link rel="stylesheet" href="styles.css"&gt;
+                &lt;/head&gt;
+            </p>
+            <div style="padding-left: 50px;">
+                <p>
+                    &lt;h1 class="pink"&gt;This is a heading&lt;/h1&gt;
+                    &lt;p class="gray"&gt;This is a paragraph.&lt;/p&gt;
+                </p>
+                <b>stylesheet.css:</b>
+                <p>.pink{
+                    color: pink;
+                }</p>
+                <p>
+                .gray{
+                    color: gray;
+                }</p>
+            </div>
+                <br>
+            <div class="block">
+                <h1 class="pink">This is a heading</h1>
+                <p class="gray">This is a paragraph.</p>
+                
+            </div>
+        </div>
+        <!-- .............................. -->
+        <h1 class="mainHeading">6 HTML5 and CSS3 – Fonts and Effects :</h1>
+        <h2 class="subHeading">6.1 Fonts</h2>
+        <!-- <ol>
+            <li >one</li>
+            <li>two
+            <ol>
+                <li>two.one</h4></li>
+                <li>two.two</li>
+                <li>two.three</li>
+            </ol>
+            </li>
+        </ol> -->
+        <div class="subContent">
+            <p>The font property is a shorthand property for:</p>
+            <ul>
+                <li>font-style</li>
+                <li>font-variant</li>
+                <li>font-weight</li>
+                <li>font-size/line-height</li>
+                <li>font-family</li>
+            </ul>
+        </div>
+        <h3 class="subSubHeading">6.1.1 font-style</h3>
+        <div class="subSubContent">
+            <p>Specifies the font style. Default value is "normal".</p>
+            <p>Syntax: font-style: italic;</p>
+            <p>Ex:</p>
+            <div class="block">
+                <p >This is a paragraph, normal(default style).</p>
+                <p style="font-style: italic;">This is a paragraph, italic.</p>
+                <p style="font-style: oblique;">This is a paragraph, oblique.</p>
+            </div>
+        </div>
+
+        <h3 class="subSubHeading">6.1.2 font-variant</h3>
+        <div class="subSubContent">
+            <p>Specifies the font variant. Default value is "normal"</p>
+            <p>Syntax: font-variant: small-caps;</p>
+            <p>Ex:</p>
+            <div class="block">
+                <p >This is a paragraph, normal(default).</p>
+                <p style="font-variant: small-caps;">This is a paragraph, small-caps.</p>
+            </div>
+        </div>
+        <h3 class="subSubHeading">6.1.3 font-weight</h3>
+        <div class="subSubContent">
+            <p>Specifies the font weight. Default value is "normal"</p>
+            <p>Syntax: font-weight: lighter;</p>
+            <p>Ex:</p>
+            <div class="block">
+                <p >This is a default paragraph.</p>
+                <p style="font-weight: lighter;">This is a paragraph with lighter font weight.</p>
+                <p style="font-weight: bold;">This is a paragraph with bold font weight.</p>
+                <p style="font-weight: 600;">This is a paragraph with font weight 600.</p>
+            </div>
+        </div>
+        <h3 class="subSubHeading">6.1.4 font-size/line-height</h3>
+        <div class="subSubContent">
+            <p>Specifies the font size and the line-height. Default value is "normal"</p>
+            <p>Syntax: font-size: 150%;</p>
+            <p>Ex:</p>
+            <div class="block">
+                <p style="font-size: 10px;">This is a paragraph with font size 10px.</p>
+                <p style="font-size: 100%;">This is a paragraph with font size 100%.</p>
+                <p style="font-size: 150%;">This is a paragraph with font size 150%.</p>
+                <p style="font-size: 200%;">This is a paragraph with font size 200%.</p>        
+            </div>
+        </div>
+
+        <h3 class="subSubHeading">6.1.5 font-family</h3>
+        <div class="subSubContent">
+            <p>Specifies the font family. Default value depends on the browser</p>
+            <p>Syntax: font-family: "Times New Roman";</p>
+            <p>Ex:</p>
+            <div class="block">
+                <p style="font-family: Times New Roman;">This is a paragraph, shown in the Times New Roman font.</p>
+                <p style="font-family: monospace;">This is a paragraph, shown in the monospace font.</p>
+                <p style="font-family: fantasy;">This is a paragraph, shown in the fantasy font.</p>
+                <p style="font-family: 'Courier New', Courier, monospace;">This is a paragraph, shown in the Courier New font.</p>
+            </div>
+        </div>
+        <h2 class="subHeading">6.2 HTML5 and CSS3 effects </h2> 
+        <h3 class="subSubHeading">CSS Animations</h3>
+        <div class="subSubContent">
+            <p>CSS allows animation of HTML elements without using JavaScript or Flash!</p>
+            <p>These are some of CSS animation properties</p>
+            <ul>
+                <li>@keyframes</li>
+                <li>animation-name</li>
+                <li>animation-duration</li>
+                <li>animation-delay</li>
+                <li>animation-iteration-count</li>
+                <li>animation-direction</li>
+                <li>animation-timing-function</li>
+                <li>animation-fill-mode</li>
+                <li>animation</li>
+            </ul>
+            <p>An animation lets an element gradually change from one style to another.</p>
+            <p>You can change as many CSS properties you want, as many times you want.</p>
+            <p>To use CSS animation, you must first specify some keyframes for the animation.</p>
+            <p>Keyframes hold what styles the element will have at certain times.</p>
+            <p>When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.</p>
+            <p></p>EX:</p>
+            <p>Syntax: @keyframes example {
+                from {background-color: red;}
+                to {background-color: yellow;}
+              }
+            </p>
+            <p style="padding-left: 45px;">div {
+                width: 100px;<br>
+                height: 100px;<br>
+                background-color: red;<br>
+                animation-name: example;<br>
+                animation-duration: 4s;<br>
+                animation-iteration-count: infinite;
+              }
+            </p>
+            <div class="animationDiv"></div>
+            <p>Syntax:@keyframes example {</p>
+                <p style="padding-left: 45px;">
+                0%   {background-color:red; left:0px; top:0px;}
+                25%  {background-color:yellow; left:200px; top:0px;}<br>
+                50%  {background-color:blue; left:200px; top:200px;}<br>
+                75%  {background-color:green; left:0px; top:200px;}<br>
+                100% {background-color:red; left:0px; top:0px;}<br>
+              }<br>
+              div {
+                width: 100px;<br>
+                height: 100px;<br>
+                background-color: red;<br>
+                position: relative;<br>
+                animation-name: example;<br>
+                animation-duration: 4s;<br>
+                animation-iteration-count: infinite;
+              }
+            </p>
+            <div class="animationDiv2"></div>
+
+        </div>
+        
+        <h3 class="subSubHeading" style="padding-top: 200px;">CSS Animations Speed</h3>
+        <div class="subSubContent">
+            <p>The animation-timing-function property specifies the speed curve of the animation.</p>
+            <p>The animation-timing-function property can have the following values:</p>
+            <ul>
+                <li><b>ease</b> - Specifies an animation with a slow start, then fast, then end slowly (this is default)</li>
+                <li><b>linear</b> - Specifies an animation with the same speed from start to end</li>
+                <li><b>ease-in</b> - Specifies an animation with a slow start</li>
+                <li><b>ease-out</b> - Specifies an animation with a slow end</li>
+                <li><b>ease-in-out</b> - Specifies an animation with a slow start and end</li>
+                <li><b>cubic-bezier(n,n,n,n)</b> - Lets you define your own values in a cubic-bezier function</li>
+            </ul>
+            <p>Syntax: </p>
+            <p style="padding-left: 45px;">
+                &lt;div class="speed" id="div1"&gt;linear&lt;/div&gt;<br>
+                &lt;div class="speed" id="div2"&gt;ease&lt;/div&gt;<br>
+                &lt;div class="speed" id="div3"&gt;ease-in&lt;/div&gt;<br>
+                &lt;div class="speed" id="div4"&gt;ease-out&lt;/div&gt;<br>
+                &lt;div class="speed" id="div5"&gt;ease-in-out&lt;/div&gt;<br><br>
+
+
+                .speed {
+                    width: 100px;<br>
+                    height: 50px;<br>
+                    background-color: red;<br>
+                    font-weight: bold;<br>
+                    position: relative;<br>
+                    animation: mymove 5s infinite;<br>
+                  }<br><br>
+                  
+                  #div1 {animation-timing-function: linear;}<br>
+                  #div2 {animation-timing-function: ease;}<br>
+                  #div3 {animation-timing-function: ease-in;}<br>
+                  #div4 {animation-timing-function: ease-out;}<br>
+                  #div5 {animation-timing-function: ease-in-out;}<br><br>
+                  
+                  @keyframes mymove {<br>
+                    from {left: 0px;}<br>
+                    to {left: 300px;}<br>
+                  }
+            </p>
+
+            <div class="speed" id="div1">linear</div>
+            <div class="speed" id="div2">ease</div>
+            <div class="speed" id="div3">ease-in</div>
+            <div class="speed" id="div4">ease-out</div>
+            <div class="speed" id="div5">ease-in-out</div>
+        </div>
+        
+    </div>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(95,50,40,0,2*Math.PI);
+            ctx.stroke();
+        </script>
+    </div>
+</body>
+</html>
